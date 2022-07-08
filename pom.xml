@@ -97,17 +97,19 @@
 	<distributionManagement>
 	
 	    <repository>
-	      <id>nexus</id>
+	      <id>release</id>
 	      <name>flipkartrelease</name>
 	      <url>http://localhost:8881/repository/flipkartrelease/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
-	      <id>nexus</id>
+	      <id>snapshot</id>
 	      <name>flipkart-snapshot</name>
 	      <url>http://localhost:8881/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
 	    
+		 <repository>
+      		
 	</distributionManagement>
 	
 	<build>
