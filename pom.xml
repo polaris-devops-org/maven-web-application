@@ -107,9 +107,7 @@
 	      <name>flipkart-snapshot</name>
 	      <url>http://localhost:8881/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
-	    
-		 <repository>
-      		
+	  	      		
 	</distributionManagement>
 	
 	<build>
