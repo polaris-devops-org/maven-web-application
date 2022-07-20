@@ -1,0 +1,19 @@
+node
+{
+    stage('Checkout Code')
+    {
+        git branch: 'development', credentialsId: 'd58705a8-35b7-4018-adce-dba89a9001d6', url: 'https://github.com/polaris-devops-org/maven-web-application.git'
+    }
+    stage('Build')
+    {
+    bat "mvn clean package"    
+    }
+    stage('Sonarqube Execution')
+    {
+    bat "mvn sonar:sonar"
+}
+stage('nexus repository Execution')
+    {
+    bat "mvn deploy"
+}
+}
