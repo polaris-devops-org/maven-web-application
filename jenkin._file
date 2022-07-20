@@ -8,6 +8,7 @@ node
     {
     bat "mvn clean package"    
     }
+  */
     stage('Sonarqube Execution')
     {
     bat "mvn sonar:sonar"
@@ -16,4 +17,5 @@ stage('nexus repository Execution')
     {
     bat "mvn deploy"
 }
+/*
 }
