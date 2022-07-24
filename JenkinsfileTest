@@ -5,7 +5,7 @@ node
 {
 
  
- stage('Checkout')
+ stage('CheckoutGIT')
  {
  	git branch: 'development', credentialsId: 'd58705a8-35b7-4018-adce-dba89a9001d6', url: 'https://github.com/polaris-devops-org/maven-web-application.git'
     }
