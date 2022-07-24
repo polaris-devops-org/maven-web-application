@@ -1,4 +1,4 @@
-node
+node("Node1")
 {
     stage('Checkout Code')
     {
