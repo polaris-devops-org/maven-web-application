@@ -1,10 +1,9 @@
 
 
-node ('Node1')
+node ("Node1")
 
 {
 
- 
 stage('Checkout Code')
     {
         git branch: 'development', credentialsId: 'd58705a8-35b7-4018-adce-dba89a9001d6', url: 'https://github.com/polaris-devops-org/maven-web-application.git'
@@ -13,7 +12,6 @@ stage('Checkout Code')
     {
     bat "mvn clean package"    
     }
-
 
  /*
  stage('Build')
