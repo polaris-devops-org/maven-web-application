@@ -8,12 +8,12 @@ node
   
  stage('Checkout')
  {
- 	git branch: 'development', credentialsId: 'bed5a851-d84d-412e-87e7-bf9ce23c0e0e', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
- 
- }
-
- 
-
+ 	git branch: 'development', credentialsId: 'd58705a8-35b7-4018-adce-dba89a9001d6', url: 'https://github.com/polaris-devops-org/maven-web-application.git'
+    }
+    stage('Build')
+    {
+    bat "mvn clean package"    
+    }
 
  /*
  stage('Build')
